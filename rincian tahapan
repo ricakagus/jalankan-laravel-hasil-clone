@@ -1,0 +1,10 @@
+Pertama-tama, kita perlu membuat file .env berdasarkan dari file env.example
+Instal package-package yang diinstal dalam composer dengan perintah: > composer install
+Lalu jalankan perintahh: > php artisan key:generate; untuk meng-generate keyuntuk dimasukkan ke APP_KEY di file .env
+
+Buatlah database yang sesuai dengan setingan database pada file .env
+Generate Tabel pada menggunakan perintah: > php artisan migrate
+
+Buatlah isian data pada factory melalui fasilitas seeder, dengan perintah: > php artisan db:seed
+
+Lalu jalankan serve artisan dengan perintah: > php artisan serve
